@@ -22,30 +22,36 @@
   <meta name="geo.position" content="-2.9786;104.7365" />
   <meta name="ICBM" content="-2.9786, 104.7365" />
 
-  <!-- Favicon & Web App Manifest -->
+  <!-- Canonical, Favicon & Web App Manifest -->
+  <link rel="canonical" href="https://pempek-kst-landing-page.vercel.app/" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="manifest" href="site.webmanifest" />
 
   <!-- Open Graph / WhatsApp & Social Sharing -->
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pempek-kst-landing-page.vercel.app/" />
   <meta property="og:locale" content="id_ID" />
   <meta property="og:site_name" content="Pempek KST Lemak Nian" />
-  <meta property="og:title" content="Pempek KST Lemak Nian — Pempek Asli Palembang (Tenggiri, Gabus &amp; Kakap)" />
+  <meta property="og:title" content="Pempek KST Lemak Nian — Pempek Homemade Asli Palembang" />
   <meta
     property="og:description"
-    content="Bebas pilih ikan Tenggiri, Gabus, atau Kakap mulai Rp2.500/pcs &amp; paket isi 10 mulai Rp25.000. Kemasan vakum aman kirim dari Palembang ke seluruh Indonesia."
+    content="Pempek Homemade Asli Palembang (Tenggiri, Gabus &amp; Kakap) mulai Rp2.500/pcs &amp; paket isi 10 mulai Rp25.000. Cek ongkir &amp; pesan langsung via WhatsApp!"
   />
-  <meta property="og:image" content="assets/hero-pempek.jpg" />
-  <meta property="og:image:alt" content="Sajian Pempek Asli Palembang dari Pempek KST Lemak Nian dengan cuko kental" />
+  <meta property="og:image" content="https://pempek-kst-landing-page.vercel.app/assets/og-pempek.jpg" />
+  <meta property="og:image:secure_url" content="https://pempek-kst-landing-page.vercel.app/assets/og-pempek.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Sajian Pempek Homemade Asli Palembang dari Pempek KST Lemak Nian dengan cuko kental" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Pempek KST Lemak Nian — Pempek Asli Palembang" />
+  <meta name="twitter:title" content="Pempek KST Lemak Nian — Pempek Homemade Asli Palembang" />
   <meta
     name="twitter:description"
     content="Pempek Asli Palembang pilihan Ikan Tenggiri, Gabus &amp; Kakap langsung dari Lorok Pakjo, Palembang. Cek estimasi ongkir dan pesan langsung via WhatsApp."
   />
-  <meta name="twitter:image" content="assets/hero-pempek.jpg" />
+  <meta name="twitter:image" content="https://pempek-kst-landing-page.vercel.app/assets/og-pempek.jpg" />
 
   <!-- Performance Preloads & Fonts -->
   <link rel="preload" as="image" href="assets/hero-pempek.jpg" />
@@ -70,8 +76,9 @@
           "servesCuisine": ["Indonesian", "Palembang"],
           "priceRange": "Rp2.500 - Rp148.000",
           "telephone": "+62-878-1711-0555",
+          "url": "https://pempek-kst-landing-page.vercel.app/",
           "openingHours": "Mo-Su 08:00-19:00",
-          "image": "assets/hero-pempek.jpg",
+          "image": "https://pempek-kst-landing-page.vercel.app/assets/og-pempek.jpg",
           "areaServed": [
             { "@type": "City", "name": "Palembang" },
             { "@type": "Country", "name": "Indonesia" }
@@ -186,7 +193,7 @@
   </noscript>
   <!-- TOP PROMO RIBBON -->
   <div class="promo-ribbon">
-    <strong>100% Homemade Asli Palembang</strong> • Dikirim Fresh Vakum dari Dapur Palembang • Order sebelum <strong>13.00 WIB</strong> dikirim hari yang sama
+    <strong>100% Homemade Palembang</strong> • Fresh Vakum • Order sebelum <strong>13.00 WIB</strong> dikirim hari yang sama
   </div>
 
   <!-- STICKY HEADER -->
@@ -196,7 +203,7 @@
         <div class="brand-mark" aria-hidden="true">KST</div>
         <div>
           <span class="brand-text-title">Pempek KST Lemak Nian</span>
-          <span class="brand-text-sub">Asli Palembang • 3 Pilihan Ikan</span>
+          <span class="brand-text-sub">Asli Palembang<span class="brand-sub-extra"> • 3 Pilihan Ikan</span></span>
         </div>
       </a>
 
@@ -211,7 +218,7 @@
       <div class="nav-actions">
         <button type="button" class="cart-pill-btn" id="headerCartBtn" aria-label="Lihat Ringkasan Paket">
           <span class="cart-label-desktop">Box Saya</span>
-          <span class="cart-label-mobile">Box</span>
+          <span class="cart-label-mobile" aria-hidden="true">🛍</span>
           <span class="cart-count-badge" id="headerCartCount">0</span>
         </button>
         <a href="#rakit-paket" class="btn btn--primary btn--sm nav-desktop-cta">Cek Ongkir</a>
@@ -245,7 +252,8 @@
       <div class="container hero-grid">
         <div>
           <div class="hero-origin-chip">
-            <span>🏡</span> 100% Homemade Asli Palembang • Dapur Lorok Pakjo
+            <span aria-hidden="true">🏡</span>
+            <span>100% Homemade • Lorok Pakjo, Palembang</span>
           </div>
 
           <h1 class="hero-title">

@@ -11,5 +11,5 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
-Sitemap: /sitemap.xml
-# LLMs info: /llms.txt
+Sitemap: https://pempek-kst-landing-page.vercel.app/sitemap.xml
+# LLMs info: https://pempek-kst-landing-page.vercel.app/llms.txt
