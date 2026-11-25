@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Upgrade Thermal Foil dan Ice Gel">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="72%">
+      <stop offset="0%" stop-color="#F7FAFC"/>
+      <stop offset="100%" stop-color="#E4EDF3"/>
+    </radialGradient>
+    <linearGradient id="foil" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ECEFF3"/>
+      <stop offset="35%" stop-color="#CFD7E0"/>
+      <stop offset="68%" stop-color="#E6EBF0"/>
+      <stop offset="100%" stop-color="#AEB8C4"/>
+    </linearGradient>
+    <linearGradient id="ice" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D8F0FF"/>
+      <stop offset="50%" stop-color="#9BD5F7"/>
+      <stop offset="100%" stop-color="#5BAEE0"/>
+    </linearGradient>
+    <filter id="sh" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#1A3244" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+
+  <!-- Silver Insulated Thermal Foil Pouch (Left) -->
+  <g transform="translate(172 86)" filter="url(#sh)">
+    <rect x="0" y="0" width="248" height="328" rx="18" fill="url(#foil)" stroke="#9DA9B8" stroke-width="3"/>
+    <!-- Heat-sealed Foil Edges -->
+    <rect x="14" y="14" width="220" height="300" rx="10" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.65"/>
+    <line x1="16" y1="48" x2="232" y2="48" stroke="#9DA9B8" stroke-width="2" stroke-dasharray="6 5"/>
+    <!-- Metallic Sheen Diagonal -->
+    <path d="M24 270 L216 78" stroke="#FFFFFF" stroke-width="24" stroke-linecap="round" opacity="0.32"/>
+    <text x="124" y="168" text-anchor="middle" fill="#3B4958" font-family="sans-serif" font-weight="800" font-size="18" letter-spacing="1.5">THERMAL FOIL</text>
+    <text x="124" y="194" text-anchor="middle" fill="#5D6D7E" font-family="sans-serif" font-weight="600" font-size="13">INSULASI SUHU</text>
+  </g>
+
+  <!-- Frost-Chilled Blue Ice Gel Pack (Right) -->
+  <g transform="translate(454 124)" filter="url(#sh)">
+    <rect x="0" y="0" width="188" height="278" rx="22" fill="url(#ice)" stroke="#4898C9" stroke-width="3"/>
+    <rect x="14" y="14" width="160" height="250" rx="14" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.55"/>
+    <!-- Snowflake Icon -->
+    <g transform="translate(94 116)" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round">
+      <line x1="0" y1="-34" x2="0" y2="34"/>
+      <line x1="-30" y1="-17" x2="30" y2="17"/>
+      <line x1="-30" y1="17" x2="30" y2="-17"/>
+      <circle cx="0" cy="0" r="8" fill="#5BAEE0" stroke-width="4"/>
+    </g>
+    <text x="94" y="190" text-anchor="middle" fill="#17496B" font-family="sans-serif" font-weight="800" font-size="17" letter-spacing="1.2">ICE GEL</text>
+    <text x="94" y="212" text-anchor="middle" fill="#23648E" font-family="sans-serif" font-weight="600" font-size="12">EXTRA COOLING</text>
+    <!-- Condensation Droplets -->
+    <circle cx="42" cy="48" r="5" fill="#FFFFFF" opacity="0.6"/>
+    <circle cx="150" cy="76" r="4" fill="#FFFFFF" opacity="0.55"/>
+    <circle cx="144" cy="234" r="6" fill="#FFFFFF" opacity="0.5"/>
+  </g>
+</svg>
