@@ -320,47 +320,68 @@
         const price = item.prices[fishKey];
         const fishNote = item.fixedFish ? item.fixedLabel : activeFish.name;
 
+        const hasImage = Boolean(item.image);
+
         return `
-          <article class="menu-card ${qty > 0 ? "in-cart" : ""}">
-            <div>
-              <div class="menu-card-meta">
-                ${item.badge ? `<span class="menu-tag">${item.badge}</span>` : `<span></span>`}
-                <span class="menu-weight">±${item.weightGram} gr • ${item.servings}</span>
+          <article class="menu-card ${hasImage ? "menu-card--with-media" : ""} ${qty > 0 ? "in-cart" : ""}">
+            ${
+              hasImage
+                ? `
+                  <div class="menu-card-media">
+                    <img
+                      src="${item.image}"
+                      alt="${item.imageAlt || item.name}"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    ${item.badge ? `<span class="menu-media-badge">${item.badge}</span>` : ""}
+                  </div>
+                `
+                : ""
+            }
+            <div class="menu-card-body">
+              <div>
+                <div class="menu-card-meta">
+                  ${!hasImage && item.badge ? `<span class="menu-tag">${item.badge}</span>` : ""}
+                  <span class="menu-weight">±${item.weightGram} gr • ${item.servings}</span>
+                </div>
+                <h4>${item.name}</h4>
+                <p>${item.shortDesc}</p>
               </div>
-              <h4>${item.name}</h4>
-              <p>${item.shortDesc}</p>
-            </div>
 
-            <div class="menu-card-footer">
-              <div class="menu-price-block">
-                <span class="menu-price">${formatRupiah(price)}</span>
-                <span class="menu-fish-note">${fishNote}</span>
-              </div>
+              <div class="menu-card-footer">
+                <div class="menu-price-block">
+                  <span class="menu-price">${formatRupiah(price)}</span>
+                  <span class="menu-fish-note">${fishNote}</span>
+                </div>
 
-              <div class="menu-card-actions">
-                ${
-                  qty === 0
-                    ? `
-                      <button type="button" class="btn btn--secondary btn--sm" data-add-item="${item.id}" data-fish="${fishKey}">+1</button>
-                      ${
-                        item.quickBulk
-                          ? `<button type="button" class="btn btn--primary btn--sm" data-bulk-item="${item.id}" data-fish="${fishKey}" data-bulk-qty="${item.quickBulk}">+${item.quickBulk}</button>`
-                          : ""
-                      }
-                    `
-                    : `
-                      <div class="qty-stepper">
-                        <button type="button" class="qty-btn" data-dec-key="${cartKey}" aria-label="Kurangi">−</button>
-                        <span class="qty-value">${qty}</span>
-                        <button type="button" class="qty-btn" data-inc-key="${cartKey}" aria-label="Tambah 1">+</button>
-                      </div>
-                      ${
-                        item.quickBulk
-                          ? `<button type="button" class="quick-bulk-pill" data-bulk-item="${item.id}" data-fish="${fishKey}" data-bulk-qty="${item.quickBulk}" title="Tambah ${item.quickBulk} pcs sekaligus">+${item.quickBulk}</button>`
-                          : ""
-                      }
-                    `
-                }
+                <div class="menu-card-actions">
+                  ${
+                    qty === 0
+                      ? `
+                        <button type="button" class="btn btn--secondary btn--sm" data-add-item="${item.id}" data-fish="${fishKey}">+1</button>
+                        ${
+                          item.quickBulk
+                            ? `<button type="button" class="btn btn--primary btn--sm" data-bulk-item="${item.id}" data-fish="${fishKey}" data-bulk-qty="${item.quickBulk}">+${item.quickBulk}</button>`
+                            : ""
+                        }
+                      `
+                      : `
+                        <div class="qty-stepper">
+                          <button type="button" class="qty-btn" data-dec-key="${cartKey}" aria-label="Kurangi">−</button>
+                          <span class="qty-value">${qty}</span>
+                          <button type="button" class="qty-btn" data-inc-key="${cartKey}" aria-label="Tambah 1">+</button>
+                        </div>
+                        ${
+                          item.quickBulk
+                            ? `<button type="button" class="quick-bulk-pill" data-bulk-item="${item.id}" data-fish="${fishKey}" data-bulk-qty="${item.quickBulk}" title="Tambah ${item.quickBulk} pcs sekaligus">+${item.quickBulk}</button>`
+                            : ""
+                        }
+                      `
+                  }
+                </div>
               </div>
             </div>
           </article>

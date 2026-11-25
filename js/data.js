@@ -110,6 +110,8 @@ window.PEMPEK_DATA = {
       name: "Paket Hemat Coba (Isi 10)",
       shortDesc: "3 Telur Kecil + 3 Adaan + 2 Lenjer Kecil + 2 Kulit Krispi + Cuko 150ml.",
       badge: "Mulai Isi 10",
+      image: "assets/paket-coba-10.jpg",
+      imageAlt: "Ilustrasi Paket Hemat Coba Isi 10 pempek kecil goreng dan cuko kental Palembang",
       weightGram: 550,
       servings: "10 Pcs • 1–2 Orang",
       prices: {
@@ -124,6 +126,8 @@ window.PEMPEK_DATA = {
       name: "Paket Puas Mix Besar & Kecil (Isi 15)",
       shortDesc: "2 Kapal Selam Besar + 1 Lenjer Besar + 4 Telur Kecil + 4 Adaan + 4 Kulit/Pistel + Cuko 250ml.",
       badge: "Best Seller",
+      image: "assets/paket-puas-15.jpg",
+      imageAlt: "Ilustrasi Paket Puas Mix Isi 15 dengan Kapal Selam Besar, Lenjer, Adaan, dan cuko Palembang",
       weightGram: 950,
       servings: "15 Pcs • 3–4 Orang",
       prices: {
@@ -138,6 +142,8 @@ window.PEMPEK_DATA = {
       name: "Paket Keluarga Komplit (Isi 25)",
       shortDesc: "3 Kapal Selam Besar + 2 Lenjer Besar + 5 Telur Kecil + 5 Adaan + 5 Kulit + 5 Pistel + Cuko 400ml.",
       badge: "Paling Hemat",
+      image: "assets/paket-keluarga-25.jpg",
+      imageAlt: "Ilustrasi Paket Keluarga Komplit Isi 25 kemasan vakum siap goreng beserta hasil sajian pempek",
       weightGram: 1550,
       servings: "25 Pcs • 5–6 Orang",
       prices: {
@@ -152,6 +158,8 @@ window.PEMPEK_DATA = {
       name: "Hampers Songket Palembang (Isi 20)",
       shortDesc: "Box eksklusif motif Songket + kartu ucapan + 2 Kapal Selam + 2 Lenjer Besar + 16 Pempek Kecil Mix + Cuko 350ml + Ice Gel.",
       badge: "Cocok Hadiah",
+      image: "assets/paket-hampers-20.jpg",
+      imageAlt: "Ilustrasi Hampers Songket Palembang Isi 20 lengkap dengan box hadiah, kemasan vakum, botol cuko, dan ice gel",
       weightGram: 1300,
       servings: "20 Pcs • 4–5 Orang",
       prices: {
