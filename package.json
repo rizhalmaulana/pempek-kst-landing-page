@@ -1,0 +1,16 @@
+{
+  "name": "pempek-kst-landing-page",
+  "version": "1.0.0",
+  "description": "Pempek KST Lemak Nian - Pempek Asli Palembang Landing Page",
+  "author": "Pempek KST Lemak Nian",
+  "license": "MIT",
+  "keywords": [
+    "pempek",
+    "palembang",
+    "food",
+    "landing-page"
+  ],
+  "dependencies": {
+    "@vercel/speed-insights": "^1.1.0"
+  }
+}
