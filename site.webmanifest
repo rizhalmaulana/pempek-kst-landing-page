@@ -1,0 +1,17 @@
+{
+  "name": "Pempek KST Lemak Nian — Asli Palembang",
+  "short_name": "KST Lemak Nian",
+  "description": "Pempek Asli Palembang dengan pilihan Ikan Tenggiri, Gabus, dan Kakap serta cuko kental gula aren asli.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#FAF6F0",
+  "theme_color": "#7D1E26",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

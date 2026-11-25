@@ -1,0 +1,14 @@
+# OS & Editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# Vercel local cache & env
+.vercel/
+.env
+.env.*
+
+# Logs
+*.log

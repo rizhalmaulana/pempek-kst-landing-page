@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# AI Search & Generative Engine Crawlers (GEO)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+Sitemap: /sitemap.xml
+# LLMs info: /llms.txt
