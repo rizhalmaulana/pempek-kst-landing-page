@@ -29,78 +29,52 @@ window.PEMPEK_DATA = {
     {
       id: "tenggiri",
       name: "Ikan Tenggiri",
-      badge: "Paling Favorit",
-      priceHint: "Satuan mulai Rp3.500 • Paket 10 Rp35.000",
-      tagline: "Gurih klasik khas Palembang dengan aroma ikan segar yang mantap.",
-      description:
-        "Menggunakan daging ikan tenggiri batang segar pilihan. Menghasilkan tekstur padat-kenyal seimbang dan aroma gurih autentik yang paling dicari pecinta pempek sejati.",
-      bestFor: "Pecinta pempek klasik, oleh-oleh kantor, dan paket keluarga.",
+      badge: "Favorit",
+      priceHint: "Mulai Rp3.500/pcs • Paket 10 Rp35.000",
+      tagline: "Gurih klasik khas Palembang, aroma ikan mantap.",
+      bestFor: "Pecinta rasa klasik & keluarga.",
       priceTierLabel: "Mulai Rp3,5rb",
       accentColor: "#7D1E26",
       metrics: {
         kekenyalan: 90,
         kelembutan: 82,
-        aromaIkan: 94,
-        ekonomis: 85
-      },
-      highlights: [
-        "100% daging tenggiri segar tanpa campuran",
-        "Aroma gurih kuat, makin nikmat disiram cuko pedas",
-        "Tetap lembut walau sudah dingin"
-      ]
+        aromaIkan: 94
+      }
     },
     {
       id: "gabus",
       name: "Ikan Gabus",
-      badge: "Autentik Premium",
-      priceHint: "Satuan mulai Rp4.000 • Paket 10 Rp40.000",
-      tagline: "Tekstur paling halus & lembut, rasa gurih bersih khas selera Palembang lama.",
-      description:
-        "Ikan sungai primadona masyarakat Palembang asli. Warna adonan lebih cerah alami, serat sangat halus, rasa gurih lembut tanpa amis—pilihan utama untuk hampers eksklusif & anak-anak.",
-      bestFor: "Selera autentik Palembang, anak-anak, lansia, & hampers VIP.",
+      badge: "Premium",
+      priceHint: "Mulai Rp4.000/pcs • Paket 10 Rp40.000",
+      tagline: "Tekstur paling halus & lembut, gurih bersih tanpa amis.",
+      bestFor: "Selera Palembang asli, anak-anak & hampers.",
       priceTierLabel: "Mulai Rp4rb",
       accentColor: "#B8862E",
       metrics: {
         kekenyalan: 80,
         kelembutan: 98,
-        aromaIkan: 76,
-        ekonomis: 76
-      },
-      highlights: [
-        "Daging ikan gabus sungai segar berkualitas tinggi",
-        "Tekstur paling halus, ringan & tidak berbau amis",
-        "Pilihan terbaik untuk oleh-oleh & bingkisan spesial"
-      ]
+        aromaIkan: 76
+      }
     },
     {
       id: "kakap",
       name: "Ikan Kakap",
-      badge: "Paling Ekonomis",
-      priceHint: "Satuan mulai Rp2.500 • Paket 10 Rp25.000",
-      tagline: "Padat, kenyal, gurih seimbang dengan harga paling ramah di kantong.",
-      description:
-        "Olahan ikan kakap putih segar dengan komposisi ikan tetap melimpah. Menghasilkan gigitan padat dan renyah saat digoreng—cocok untuk stok camilan freezer harian di rumah.",
-      bestFor: "Stok freezer rumah, acara arisan, & pesanan jumlah besar.",
+      badge: "Ekonomis",
+      priceHint: "Mulai Rp2.500/pcs • Paket 10 Rp25.000",
+      tagline: "Padat, kenyal, renyah digoreng, harga paling hemat.",
+      bestFor: "Stok freezer harian, arisan & acara.",
       priceTierLabel: "Mulai Rp2,5rb",
       accentColor: "#2F5D50",
       metrics: {
         kekenyalan: 86,
         kelembutan: 78,
-        aromaIkan: 80,
-        ekonomis: 98
-      },
-      highlights: [
-        "Ikan kakap segar dengan rasa gurih seimbang",
-        "Luar ekstra renyah ketika digoreng garing",
-        "Paling hemat untuk stok camilan keluarga & reseller"
-      ]
+        aromaIkan: 80
+      }
     }
   ],
 
   /**
    * KATALOG MENU (Paket Mulai Isi 10, Beli Satuan Per Pcs, dan Cuko/Pelengkap)
-   * Harga otomatis menyesuaikan jenis ikan (tenggiri / gabus / kakap).
-   * Jika `fixedFish: true`, item tidak bergantung pada pilihan ikan (misal Cuko).
    */
   menuItems: [
     // --- PAKET SIAP KIRIM (MULAI ISI 10) ---
@@ -108,12 +82,12 @@ window.PEMPEK_DATA = {
       id: "paket-coba",
       category: "paket",
       name: "Paket Hemat Coba (Isi 10)",
-      shortDesc: "3 Telur Kecil + 3 Adaan + 2 Lenjer Kecil + 2 Kulit Krispi + Cuko 150ml.",
+      shortDesc: "3 Telur Kecil, 3 Adaan, 2 Lenjer Kecil, 2 Kulit + Cuko 150ml.",
       badge: "Mulai Isi 10",
       image: "assets/paket-coba-10.jpg",
-      imageAlt: "Ilustrasi Paket Hemat Coba Isi 10 pempek kecil goreng dan cuko kental Palembang",
+      imageAlt: "Foto Paket Hemat Coba Isi 10 pempek goreng dan cuko Palembang",
       weightGram: 550,
-      servings: "10 Pcs • 1–2 Orang",
+      servings: "10 Pcs",
       prices: {
         tenggiri: 35000,
         gabus: 40000,
@@ -123,13 +97,13 @@ window.PEMPEK_DATA = {
     {
       id: "paket-puas",
       category: "paket",
-      name: "Paket Puas Mix Besar & Kecil (Isi 15)",
-      shortDesc: "2 Kapal Selam Besar + 1 Lenjer Besar + 4 Telur Kecil + 4 Adaan + 4 Kulit/Pistel + Cuko 250ml.",
+      name: "Paket Puas Mix (Isi 15)",
+      shortDesc: "2 Kapal Selam, 1 Lenjer Besar, 12 Pempek Kecil Mix + Cuko 250ml.",
       badge: "Best Seller",
       image: "assets/paket-puas-15.jpg",
-      imageAlt: "Ilustrasi Paket Puas Mix Isi 15 dengan Kapal Selam Besar, Lenjer, Adaan, dan cuko Palembang",
+      imageAlt: "Foto Paket Puas Mix Isi 15 Kapal Selam, Lenjer, Adaan, dan cuko",
       weightGram: 950,
-      servings: "15 Pcs • 3–4 Orang",
+      servings: "15 Pcs",
       prices: {
         tenggiri: 78000,
         gabus: 90000,
@@ -139,13 +113,13 @@ window.PEMPEK_DATA = {
     {
       id: "paket-keluarga",
       category: "paket",
-      name: "Paket Keluarga Komplit (Isi 25)",
-      shortDesc: "3 Kapal Selam Besar + 2 Lenjer Besar + 5 Telur Kecil + 5 Adaan + 5 Kulit + 5 Pistel + Cuko 400ml.",
+      name: "Paket Keluarga (Isi 25)",
+      shortDesc: "3 Kapal Selam, 2 Lenjer Besar, 20 Pempek Kecil Mix + Cuko 400ml.",
       badge: "Paling Hemat",
       image: "assets/paket-keluarga-25.jpg",
-      imageAlt: "Ilustrasi Paket Keluarga Komplit Isi 25 kemasan vakum siap goreng beserta hasil sajian pempek",
+      imageAlt: "Foto Paket Keluarga Isi 25 kemasan vakum siap goreng",
       weightGram: 1550,
-      servings: "25 Pcs • 5–6 Orang",
+      servings: "25 Pcs",
       prices: {
         tenggiri: 128000,
         gabus: 148000,
@@ -155,13 +129,13 @@ window.PEMPEK_DATA = {
     {
       id: "paket-hampers",
       category: "paket",
-      name: "Hampers Songket Palembang (Isi 20)",
-      shortDesc: "Box eksklusif motif Songket + kartu ucapan + 2 Kapal Selam + 2 Lenjer Besar + 16 Pempek Kecil Mix + Cuko 350ml + Ice Gel.",
+      name: "Hampers Songket (Isi 20)",
+      shortDesc: "Box Songket + kartu ucapan, 4 Besar, 16 Kecil, Cuko 350ml + Ice Gel.",
       badge: "Cocok Hadiah",
       image: "assets/paket-hampers-20.jpg",
-      imageAlt: "Ilustrasi Hampers Songket Palembang Isi 20 lengkap dengan box hadiah, kemasan vakum, botol cuko, dan ice gel",
+      imageAlt: "Foto Hampers Songket Palembang Isi 20 lengkap box hadiah dan ice gel",
       weightGram: 1300,
-      servings: "20 Pcs • 4–5 Orang",
+      servings: "20 Pcs",
       prices: {
         tenggiri: 115000,
         gabus: 132000,
@@ -173,13 +147,13 @@ window.PEMPEK_DATA = {
     {
       id: "kapal-selam",
       category: "satuan",
-      name: "Pempek Kapal Selam Besar",
-      shortDesc: "Isi 1 butir telur ayam utuh, gurih padat, ukuran jumbo khas Palembang.",
+      name: "Kapal Selam Besar",
+      shortDesc: "Isi 1 telur utuh, ukuran jumbo gurih padat.",
       badge: "Wajib Coba",
       image: "assets/satuan-kapal-selam.jpg",
-      imageAlt: "Foto Pempek Kapal Selam Besar goreng renyah dengan siraman cuko dan timun",
+      imageAlt: "Foto Pempek Kapal Selam Besar goreng dengan cuko dan timun",
       weightGram: 170,
-      servings: "Satuan (1 Pcs)",
+      servings: "1 Pcs",
       prices: {
         tenggiri: 14000,
         gabus: 16000,
@@ -189,13 +163,13 @@ window.PEMPEK_DATA = {
     {
       id: "lenjer-besar",
       category: "satuan",
-      name: "Pempek Lenjer Besar",
-      shortDesc: "Potongan padat panjang, pas diiris tebal lalu digoreng garing luarnya.",
+      name: "Lenjer Besar",
+      shortDesc: "Padat panjang, pas diiris tebal & digoreng garing.",
       badge: "Satuan",
       image: "assets/satuan-lenjer-besar.jpg",
-      imageAlt: "Foto Pempek Lenjer Besar asli Palembang disajikan bersama cuko kental",
+      imageAlt: "Foto Pempek Lenjer Besar asli Palembang bersama cuko",
       weightGram: 160,
-      servings: "Satuan (1 Pcs)",
+      servings: "1 Pcs",
       prices: {
         tenggiri: 13000,
         gabus: 15000,
@@ -205,13 +179,13 @@ window.PEMPEK_DATA = {
     {
       id: "telur-kecil",
       category: "satuan",
-      name: "Pempek Telur Kecil",
-      shortDesc: "Pempek isi telur ukuran pas sekali gigit, favorit anak-anak & camilan sore.",
-      badge: "Bisa Satuan",
+      name: "Telur Kecil",
+      shortDesc: "Isi telur ukuran bite-size, favorit anak-anak.",
+      badge: "Satuan",
       image: "assets/satuan-telur-kecil.jpg",
-      imageAlt: "Foto Pempek Telur Kecil goreng keemasan khas Palembang",
+      imageAlt: "Foto Pempek Telur Kecil goreng keemasan",
       weightGram: 45,
-      servings: "Satuan (1 Pcs)",
+      servings: "1 Pcs",
       quickBulk: 5,
       prices: {
         tenggiri: 3500,
@@ -222,13 +196,13 @@ window.PEMPEK_DATA = {
     {
       id: "lenjer-kecil",
       category: "satuan",
-      name: "Pempek Lenjer Kecil",
-      shortDesc: "Pempek lenjer mini padat kenyal, cocok buat dicampur di dalam box satuan.",
-      badge: "Bisa Satuan",
+      name: "Lenjer Kecil",
+      shortDesc: "Lenjer mini padat kenyal, pas untuk campur box.",
+      badge: "Satuan",
       image: "assets/satuan-lenjer-kecil.jpg",
-      imageAlt: "Foto Pempek Lenjer Kecil goreng gurih khas Palembang",
+      imageAlt: "Foto Pempek Lenjer Kecil goreng gurih",
       weightGram: 45,
-      servings: "Satuan (1 Pcs)",
+      servings: "1 Pcs",
       quickBulk: 5,
       prices: {
         tenggiri: 3500,
@@ -239,13 +213,13 @@ window.PEMPEK_DATA = {
     {
       id: "adaan",
       category: "satuan",
-      name: "Pempek Adaan Bulat",
-      shortDesc: "Pempek bulat dengan bawang merah, santan tipis & daun bawang harum.",
+      name: "Adaan Bulat",
+      shortDesc: "Bulat gurih santan tipis, bawang & daun bawang.",
       badge: "Favorit",
       image: "assets/satuan-adaan.jpg",
-      imageAlt: "Foto Pempek Adaan Bulat goreng keemasan khas Palembang",
+      imageAlt: "Foto Pempek Adaan Bulat goreng keemasan",
       weightGram: 45,
-      servings: "Satuan (1 Pcs)",
+      servings: "1 Pcs",
       quickBulk: 5,
       prices: {
         tenggiri: 3500,
@@ -256,13 +230,13 @@ window.PEMPEK_DATA = {
     {
       id: "kulit-krispi",
       category: "satuan",
-      name: "Pempek Kulit Krispi",
-      shortDesc: "Olahan kulit ikan segar—aroma gurih maksimal, super renyah saat digoreng.",
+      name: "Kulit Krispi",
+      shortDesc: "Kulit ikan segar, aroma gurih & ekstra renyah.",
       badge: "Crispy",
       image: "assets/satuan-kulit.jpg",
       imageAlt: "Foto Pempek Kulit Krispi garing khas Palembang",
       weightGram: 45,
-      servings: "Satuan (1 Pcs)",
+      servings: "1 Pcs",
       quickBulk: 5,
       prices: {
         tenggiri: 3500,
@@ -273,13 +247,13 @@ window.PEMPEK_DATA = {
     {
       id: "pistel-kates",
       category: "satuan",
-      name: "Pempek Pistel Kates",
-      shortDesc: "Isi tumisan pepaya muda & ebi wangi khas dapur tradisional Palembang.",
+      name: "Pistel Kates",
+      shortDesc: "Isi tumis pepaya muda & ebi wangi khas Palembang.",
       badge: "Khas",
       image: "assets/satuan-pistel.jpg",
       imageAlt: "Foto Pempek Pistel Kates homemade khas Palembang",
       weightGram: 45,
-      servings: "Satuan (1 Pcs)",
+      servings: "1 Pcs",
       quickBulk: 5,
       prices: {
         tenggiri: 3500,
@@ -292,13 +266,13 @@ window.PEMPEK_DATA = {
     {
       id: "extra-cuko",
       category: "pelengkap",
-      name: "Extra Cuko Kental Botol 250ml",
-      shortDesc: "Gula aren batok Lubuklinggau, asam jawa, ebi & rawit asli—tanpa cuka biang.",
+      name: "Extra Cuko 250ml",
+      shortDesc: "Gula aren batok, asam jawa, ebi & rawit asli.",
       badge: "Best Pairing",
       image: "assets/pelengkap-cuko.jpg",
-      imageAlt: "Foto botol Extra Cuko Kental Palembang dituang ke sajian pempek",
+      imageAlt: "Foto botol Extra Cuko Kental Palembang",
       weightGram: 280,
-      servings: "Botol 250ml",
+      servings: "250ml",
       fixedFish: true,
       fixedLabel: "Semua Varian",
       prices: {
@@ -310,11 +284,11 @@ window.PEMPEK_DATA = {
     {
       id: "tekwan-frozen",
       category: "pelengkap",
-      name: "Tekwan Frozen Komplit (3 Porsi)",
-      shortDesc: "Pentol ikan tenggiri + bumbu kuah udang, jamur kuping, bengkuang & soun.",
+      name: "Tekwan Frozen (3 Porsi)",
+      shortDesc: "Pentol tenggiri + bumbu udang, jamur kuping & soun.",
       badge: "Spesial",
       image: "assets/pelengkap-tekwan.jpg",
-      imageAlt: "Foto semangkuk Tekwan asli Palembang dengan pentol ikan, jamur kuping, dan soun",
+      imageAlt: "Foto semangkuk Tekwan asli Palembang",
       weightGram: 550,
       servings: "3 Porsi",
       fixedFish: true,
@@ -328,11 +302,11 @@ window.PEMPEK_DATA = {
     {
       id: "ice-gel-box",
       category: "pelengkap",
-      name: "Upgrade Thermal Foil + Ice Gel",
-      shortDesc: "Lapisan aluminium foil insulasi + gel pendingin tambahan untuk kirim luar pulau.",
+      name: "Thermal Foil + Ice Gel",
+      shortDesc: "Insulasi dingin tambahan untuk pengiriman luar pulau.",
       badge: "Rekomendasi",
       image: "assets/pelengkap-icegel.jpg",
-      imageAlt: "Foto Ice Gel pendingin dan box kemasan pengiriman luar kota",
+      imageAlt: "Foto Ice Gel pendingin dan box pengiriman",
       weightGram: 150,
       servings: "1 Set",
       fixedFish: true,
@@ -538,7 +512,7 @@ window.PEMPEK_DATA = {
       fish: "Ikan Gabus",
       rating: 5,
       quote:
-        "Sebagai wong Palembang yang merantau di Jakarta, nemu varian Ikan Gabus yang teksturnya sehalus ini susah banget! Kirim pakai Paxel sehari sampai masih dingin, cukonya kental nendang."
+        "Varian Ikan Gabusnya halus banget, rasanya asli Palembang! Kirim Paxel sehari sampai masih dingin, cukonya kental nendang."
     },
     {
       name: "Hendra Wijaya",
@@ -547,7 +521,7 @@ window.PEMPEK_DATA = {
       fish: "Ikan Tenggiri",
       rating: 5,
       quote:
-        "Suka banget fitur rakit paketnya, bisa campur Kapal Selam Tenggiri sama Kulit Krispi. Pas sampai Bandung kemasan vakumnya rapi banget, digoreng luarnya garing dalamnya lembut."
+        "Enak bisa campur Kapal Selam Tenggiri sama Kulit Krispi. Kemasan vakum rapi, digoreng luarnya garing dalamnya lembut."
     },
     {
       name: "Rina Oktaviani",
@@ -556,16 +530,16 @@ window.PEMPEK_DATA = {
       fish: "Ikan Kakap",
       rating: 5,
       quote:
-        "Awalnya ragu kirim Palembang ke Surabaya, tapi ikut saran kurir Next Day di website ini alhamdulillah aman 100%! Varian Kakapnya gurih pol dan hemat buat stok kulkas anak-anak."
+        "Kirim Palembang ke Surabaya pakai Next Day aman 100%! Varian Kakapnya gurih dan hemat buat stok kulkas anak-anak."
     },
     {
       name: "Budi Santoso",
       city: "Palembang",
       channel: "Hampers Kantor",
-      fish: "Mix Tenggiri & Gabus",
+      fish: "Tenggiri & Gabus",
       rating: 5,
       quote:
-        "Pesan 15 box Hampers Songket untuk tamu kantor dari Jakarta. Packing-nya berkelas, cukonya tidak pakai cuka biang jadi aman di lambung. Semua tamu langsung tanya beli di mana."
+        "Pesan 15 box Hampers Songket untuk tamu kantor. Packing berkelas, cukonya ramah di lambung, semua tamu suka!"
     }
   ],
 
@@ -574,34 +548,34 @@ window.PEMPEK_DATA = {
    */
   faqs: [
     {
-      question: "Apa perbedaan utama pempek Ikan Tenggiri, Gabus, dan Kakap di KST Lemak Nian?",
+      question: "Bedanya Tenggiri, Gabus, dan Kakap?",
       answer:
-        "Ikan Tenggiri punya rasa gurih kuat dan aroma ikan klasik yang paling populer. Ikan Gabus bertekstur paling halus, lembut, dan gurih bersih (primadona selera Palembang asli & cocok untuk anak-anak). Ikan Kakap terasa padat, kenyal, renyah saat digoreng, dan paling ekonomis untuk stok keluarga. Ketiganya 100% memakai daging ikan segar tanpa pengawet."
+        "Tenggiri gurih klasik & beraroma ikan kuat. Gabus paling halus, lembut & gurih bersih. Kakap padat, renyah digoreng & paling ekonomis. Semuanya 100% ikan segar."
     },
     {
-      question: "Apakah aman dikirim dari Palembang ke luar kota / luar pulau?",
+      question: "Aman dikirim ke luar kota / luar pulau?",
       answer:
-        "Sangat aman! Pempek kami dikemas vakum kedap udara (vacuum-sealed) setelah direbus dan didinginkan higienis, lalu diberi pilihan kurir cepat seperti Paxel Cold Chain dan JNE YES (1–2 hari sampai). Di kalkulator ongkir kami, kurir dengan durasi terlalu lama otomatis diberi tanda peringatan agar kualitas rasa tetap terjaga."
+        "Aman! Dikemas vakum kedap udara dan dikirim kurir cepat 1–2 hari (Paxel Cold Chain / JNE YES)."
     },
     {
-      question: "Berapa lama daya tahan pempek di suhu ruang dan di freezer?",
+      question: "Berapa lama daya tahannya?",
       answer:
-        "Dalam kemasan vakum tertutup rapat: tahan 3–4 hari di suhu ruang, hingga 7 hari di kulkas chiller, dan hingga 1–2 bulan di freezer (-18°C). Cuko botolan tahan hingga 2 minggu di chiller dan 1 bulan di freezer."
+        "Kemasan vakum tertutup tahan 3–4 hari suhu ruang, 7 hari di chiller, dan 1–2 bulan di freezer (-18°C)."
     },
     {
-      question: "Apakah cukonya aman di lambung dan bisa pilih level pedas?",
+      question: "Cukonya pakai cuka biang?",
       answer:
-        "Ya! Cuko KST Lemak Nian dimasak dari gula aren batok asli Lubuklinggau, asam jawa, bawang putih, ebi, dan cabai rawit—0% cuka sintetis/biang sehingga lebih nyaman di lambung. Anda bisa memilih level Pedas Asli Palembang, Sedang, atau Pisah Cabe saat memesan."
+        "Tidak. Cuko dimasak dari gula aren batok Lubuklinggau, asam jawa, ebi & rawit (0% cuka biang), dengan pilihan level Pedas Asli, Sedang, atau Pisah Cabe."
     },
     {
-      question: "Jam berapa batas pemesanan (cut-off) agar dikirim hari yang sama?",
+      question: "Batas jam kirim hari yang sama?",
       answer:
-        "Pesanan yang dikonfirmasi sebelum pukul 13.00 WIB akan diproses fresh dan dikirim di hari yang sama dari dapur kami di Palembang. Pesanan setelah pukul 13.00 WIB akan masuk pengiriman esok pagi agar tidak menginap di gudang ekspedisi."
+        "Order dikonfirmasi sebelum pukul 13.00 WIB dikirim fresh di hari yang sama dari Palembang."
     },
     {
-      question: "Bagaimana cara pembayaran dan apakah bisa pesan untuk hampers atau acara?",
+      question: "Bagaimana cara bayar & pesan hampers?",
       answer:
-        "Setelah Anda mengirim rincian pesanan ke WhatsApp kami di +62 878-1711-0555, admin akan mengonfirmasi stok dan total ongkir terbaru, lalu pembayaran dapat dilakukan melalui transfer bank atau QRIS. Kami juga melayani pemesanan Hampers Songket Palembang, oleh-oleh kantor, arisan, dan reseller."
+        "Kirim rincian order via WhatsApp (+62 878-1711-0555), pembayaran via transfer bank atau QRIS. Melayani Hampers, acara & reseller."
     }
   ]
 };

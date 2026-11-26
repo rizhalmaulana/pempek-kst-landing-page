@@ -209,30 +209,24 @@
               </div>
               ${fish.priceHint ? `<div class="fish-price-hint">${fish.priceHint}</div>` : ""}
               <p class="fish-card-tagline">${fish.tagline}</p>
-              <p class="fish-card-desc">${fish.description}</p>
 
               <div class="fish-metrics">
                 ${renderMetricRow("Kelembutan", fish.metrics.kelembutan, fish.accentColor)}
                 ${renderMetricRow("Kekenyalan", fish.metrics.kekenyalan, fish.accentColor)}
                 ${renderMetricRow("Aroma Ikan", fish.metrics.aromaIkan, fish.accentColor)}
-                ${renderMetricRow("Ekonomis", fish.metrics.ekonomis, fish.accentColor)}
               </div>
-
-              <ul class="fish-highlights">
-                ${fish.highlights.map((h) => `<li>${h}</li>`).join("")}
-              </ul>
             </div>
 
             <div>
               <div class="fish-best-for">
-                <strong>Cocok untuk:</strong> ${fish.bestFor}
+                <strong>Cocok:</strong> ${fish.bestFor}
               </div>
               <button
                 type="button"
                 class="btn ${isHighlighted ? "btn--primary" : "btn--secondary"} btn--full"
                 data-pick-fish="${fish.id}"
               >
-                Rakit Paket ${fish.name} →
+                Pilih ${fish.name} →
               </button>
             </div>
           </article>
@@ -716,22 +710,19 @@
   // =========================================================================
   const SERVING_METHODS = {
     goreng: [
-      "Keluarkan pempek dari kulkas/freezer, diamkan di suhu ruang ±20–30 menit hingga tidak beku (thawing).",
-      "Panaskan minyak secukupnya dengan api sedang. Untuk Kapal Selam, boleh dikukus 5 menit dulu agar bagian telur di dalam hangat merata.",
-      "Goreng pempek 3–5 menit sampai bagian luar kuning keemasan dan renyah. Tiriskan.",
-      "Potong sesuai selera, taburi potongan timun segar & ebi, lalu siram Cuko KST Lemak Nian!"
+      "Diamkan pempek di suhu ruang ±20 menit hingga tidak beku.",
+      "Goreng dengan minyak panas api sedang 3–5 menit sampai kuning keemasan.",
+      "Potong, tambahkan timun segar, lalu siram Cuko KST Lemak Nian."
     ],
     kukus: [
-      "Keluarkan pempek vakum dari kemasan, pastikan tidak lagi beku.",
-      "Didihkan air dalam kukusan (atau panci rebusan dengan 1 sendok teh minyak goreng agar tidak lengket).",
-      "Kukus selama 8–10 menit hingga pempek empuk, kenyal, dan hangat sampai ke bagian dalam.",
-      "Sajikan selagi hangat dengan siraman cuko kental—rasanya paling mendekati tekstur asli Palembang!"
+      "Keluarkan pempek dari kemasan vakum hingga suhu ruang.",
+      "Kukus 8–10 menit hingga empuk, kenyal, dan hangat merata.",
+      "Sajikan selagi hangat dengan siraman cuko kental."
     ],
     airfryer: [
-      "Pastikan pempek sudah dalam suhu ruang (tidak beku).",
-      "Oles tipis permukaan pempek dengan sedikit minyak goreng agar warnanya cantik keemasan.",
-      "Panggang di Air Fryer suhu 180°C selama 8–10 menit (balik sekali di menit ke-5).",
-      "Angkat saat luarnya garing ringan, potong-potong, dan nikmati dengan cuko pedas favorit Anda."
+      "Diamkan pempek di suhu ruang, oles tipis minyak goreng.",
+      "Panggang suhu 180°C selama 8–10 menit (balik di menit ke-5).",
+      "Angkat saat luar garing ringan dan nikmati dengan cuko."
     ]
   };
 
